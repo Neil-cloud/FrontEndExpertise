@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+    .login-compartmentP{
+        text-align: center;
+    }
+    .login-box{
+        max-width: 675px;
+        max-height: 725px;
+        padding: 50px;
+        background-color: white;
+        margin: 250px auto;
+        display: inline-block;
+        width: -webkit-fill-available;
+    }
+    .username-width{
+        max-width: 400px;
+    }
+}

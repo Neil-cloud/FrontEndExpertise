@@ -1,0 +1,104 @@
+/* You can add global styles to this file, and also import other style files */
+$tooltip-background: #0067b8;
+$tooltip-text: #fff;
+
+.full-height {
+  min-height: 95vh;
+}
+
+.card-hover {
+  box-shadow: 0px 1.2px 3.6px rgba(0, 0, 0, 0.108),
+    0px 6.4px 14.4px rgba(0, 0, 0, 0.132);
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0px 4.8px 14.4px rgba(0, 0, 0, 0.18),
+      0px 12.3px 28.8px rgba(0, 0, 0, 0.22);
+    transition: 0.3s;
+  }
+}
+
+/* Tooltip */
+.tooltip > .tooltip-inner {
+  background-color: $tooltip-background;
+  color: $tooltip-text;
+  border: 1px solid $tooltip-background;
+  border-color: $tooltip-background;
+  border-radius: 2px;
+  box-shadow: 0 0 10px 0 gray;
+  border-bottom-color: $tooltip-background;
+  font-size: 12px;
+}
+
+/* Tooltip on top */
+.tooltip.top > .tooltip-arrow {
+  border-top: 1px solid $tooltip-background;
+  border-top-color: $tooltip-background;
+}
+
+/* Tooltip on bottom */
+.tooltip.bottom > .tooltip-arrow {
+  border-bottom: 1px solid $tooltip-background;
+  border-bottom-color: $tooltip-background;
+}
+
+/* Tooltip on left */
+.tooltip.left > .tooltip-arrow {
+  border-left: 1px solid $tooltip-background;
+  border-left-color: $tooltip-background;
+}
+
+/* Tooltip on right */
+.tooltip.right > .tooltip-arrow {
+  border-right: 1px solid $tooltip-background;
+  border-right-color: $tooltip-background;
+}
+
+.tooltip.bs-tooltip-bottom .tooltip-inner {
+  background: $tooltip-background !important;
+}
+
+.tooltip .arrow:before {
+  border-bottom-color: $tooltip-background !important;
+  border-top-color: $tooltip-background !important;
+}
+
+hr {
+  border: 1px solid #e1dfdd;
+}
+
+.pageText {
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 1080px) {
+  .pageText {
+    padding: 0 15px 0 15px;
+  }
+}
+
+// availability color codes start
+.availability-Available,
+.AvailableIdle {
+  background: rgb(146, 195, 83) !important;
+  background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 170.09 170.09'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff;%7D.cls-2%7Bfill:%2393c351;%7D%3C/style%3E%3C/defs%3E%3Ccircle class='cls-1' cx='92.05' cy='93.27' r='62.83'/%3E%3Cpath class='cls-2' d='M85.05,0a85,85,0,1,0,85,85.05A85.07,85.07,0,0,0,85.05,0Zm43.76,64.49-50,50.15a9,9,0,0,1-6.2,2.65,8.32,8.32,0,0,1-6.2-2.65L41.28,89.48A8.9,8.9,0,1,1,53.86,76.9L72.64,95.68l43.77-43.77a8.78,8.78,0,0,1,12.58,0A8.94,8.94,0,0,1,128.81,64.49Z'/%3E%3C/svg%3E") !important;
+}
+.availability-Away,
+.availability-BeRightBack,
+.availability-BusyIdle {
+  background: rgb(252, 209, 22) !important;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2012%2012%22%20enable-background%3D%22new%200%200%2012%2012%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%3Cg%3E%3Ccircle%20fill%3D%22%23FDB913%22%20cx%3D%226%22%20cy%3D%226%22%20r%3D%226%22%2F%3E%3C%2Fg%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221.5%22%20stroke-miterlimit%3D%2210%22%20points%3D%226%2C2%206%2C6%208.5%2C8.5%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") !important;
+}
+.availability-Busy {
+  background: rgb(196, 49, 75) !important;
+  background-image: url("data:image/svg+xml;charset=utf-8,%0A%3Csvg%20id%3D%22Layer_1%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2010%2010%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23c4314b%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctitle%3Eicn_status_ALL%3C%2Ftitle%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M.674%2C2.5A5.031%2C5.031%2C0%2C0%2C1%2C2.5.674%2C4.856%2C4.856%2C0%2C0%2C1%2C5%2C0%2C4.864%2C4.864%2C0%2C0%2C1%2C7.505.674%2C5.038%2C5.038%2C0%2C0%2C1%2C9.326%2C2.5%2C4.861%2C4.861%2C0%2C0%2C1%2C10%2C5a4.861%2C4.861%2C0%2C0%2C1-.674%2C2.505A5.038%2C5.038%2C0%2C0%2C1%2C7.505%2C9.326%2C4.864%2C4.864%2C0%2C0%2C1%2C5%2C10a4.856%2C4.856%2C0%2C0%2C1-2.5-.674A5.031%2C5.031%2C0%2C0%2C1%2C.674%2C7.505%2C4.861%2C4.861%2C0%2C0%2C1%2C0%2C5%2C4.861%2C4.861%2C0%2C0%2C1%2C.674%2C2.5Z%22%2F%3E%3C%2Fsvg%3E") !important;
+}
+.availability-DoNotDisturb {
+  background: rgb(196, 49, 75) !important;
+  background-image: url("data:image/svg+xml;charset=utf-8,%0A%3Csvg%20id%3D%22Layer_1%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2010%2010%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23c4314b%3B%7D.cls-2%7Bfill%3A%23fff%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctitle%3Eicn_status_ALL%3C%2Ftitle%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M6.311.176A5.057%2C5.057%2C0%2C0%2C1%2C7.52.684a5.009%2C5.009%2C0%2C0%2C1%2C2.3%2C3.005%2C4.944%2C4.944%2C0%2C0%2C1%2C0%2C2.622%2C5.258%2C5.258%2C0%2C0%2C1-.506%2C1.2A5.079%2C5.079%2C0%2C0%2C1%2C8.53%2C8.53a4.94%2C4.94%2C0%2C0%2C1-1.011.782%2C5.1%2C5.1%2C0%2C0%2C1-1.206.51%2C4.924%2C4.924%2C0%2C0%2C1-2.624%2C0%2C5.042%2C5.042%2C0%2C0%2C1-1.2-.511A4.819%2C4.819%2C0%2C0%2C1%2C1.47%2C8.53%2C4.883%2C4.883%2C0%2C0%2C1%2C.688%2C7.515a5.1%2C5.1%2C0%2C0%2C1-.51-1.2%2C4.928%2C4.928%2C0%2C0%2C1%2C0-2.625A5.1%2C5.1%2C0%2C0%2C1%2C.688%2C2.48%2C4.961%2C4.961%2C0%2C0%2C1%2C1.47%2C1.47%2C5.015%2C5.015%2C0%2C0%2C1%2C2.485.684a5.214%2C5.214%2C0%2C0%2C1%2C1.2-.506A4.839%2C4.839%2C0%2C0%2C1%2C5%2C0%2C4.917%2C4.917%2C0%2C0%2C1%2C6.311.176Z%22%2F%3E%3Crect%20class%3D%22cls-2%22%20x%3D%223%22%20y%3D%224.5%22%20width%3D%224%22%20height%3D%221%22%2F%3E%3C%2Fsvg%3E") !important;
+}
+.availability-Offline,
+.availability-PresenceUnknown {
+  background: rgb(153, 153, 153) !important;
+}
+// availability color codes end
