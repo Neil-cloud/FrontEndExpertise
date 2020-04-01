@@ -12,6 +12,7 @@ import { AuthorizeInterceptor } from 'src/api-authorization/authorize.intercepto
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
+import { FeatureComponent } from './feature/feature.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LoginComponent } from './login/login.component';
     HomeComponent,        
     HeaderComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    FeatureComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
