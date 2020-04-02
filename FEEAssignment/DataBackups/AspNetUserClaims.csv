@@ -1,0 +1,7 @@
+﻿Id,UserId,ClaimType,ClaimValue
+2,a4bf097b-d48d-42f2-884a-c15bdac10c0f,name,AdminAccount1
+1002,614bfbcd-a529-4cae-9063-2a63d817b837,CanViewFeatures,true
+1003,7de61a15-1dd7-40e0-8b50-32d706b70246,CanViewCourses,true
+1004,7de61a15-1dd7-40e0-8b50-32d706b70246,CanViewFeatures,true
+1005,a4bf097b-d48d-42f2-884a-c15bdac10c0f,"CanViewCourseDetailsPage  ",true
+1006,f112dceb-831b-4f5e-a135-685acf90e8b3,CanViewCourses,true
