@@ -1,6 +1,5 @@
-body {
-    background: lightgray;     
-    font-family: "Roboto", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;      
-  }
+.full-height {
+  min-height: 95vh;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
