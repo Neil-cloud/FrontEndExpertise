@@ -1,0 +1,39 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+}
+
+<div class="row">
+    <section class="login-compartment">
+        <form class="login-box" id="account" method="post">
+            <h3 class="c-heading-3 x-p-t-0x">Welcome</h3>
+            <p class="c-subheading-3">Please Log In</p>
+            <hr />
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Input.Email" class="c-paragraph x-m-t-12x font-weight-bold">Username</label>
+                <input asp-for="Input.Email" class="form-control c-text-field f-flex username-width" placeholder="Enter your User Name" />
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.Password" class="c-paragraph x-m-t-10x font-weight-bold">Password</label>
+                <input asp-for="Input.Password" class="form-control c-password f-flex" placeholder="Enter your Password" />
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="d-flex flex-row-reverse x-m-t-10x">
+                    <button class="c-call-to-action c-glyph f-lightweight" role="button" type="submit">
+                        <span>Continue</span>
+                    </button>
+                </div>
+                @*<button type="submit" class="btn btn-primary">Log in</button>*@
+            </div>
+        </form>
+    </section>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

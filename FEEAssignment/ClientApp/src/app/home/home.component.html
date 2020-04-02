@@ -1,1 +1,55 @@
-<h1>Hello, world!</h1>
+<div class="home" *ngIf="!isLoading">
+    <div class="row">
+        <div class="col-lg-6">
+            <section id="user-info">
+                <h1 class="c-heading-2">Welcome {{userName}}</h1>
+                <p class="c-subheading-2">You are logged in as the {{userRole}} role</p>
+            </section>
+        </div>
+        <div class="col-lg-6">
+            <section id="company-image">
+                <img src="../../assets/images/MAQSoftware.png" />
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div *ngIf="courses && courses.length > 0" [ngClass]="{
+            'col-lg-6': features && features.length > 0,
+            'col-lg-12': !features || features.length < 1
+          }">
+            <section class="box-border x-p-a-4x" id="courses-block">
+                <div>
+                    <i class="fa fa-book icon-size x-m-r-2x" aria-hidden="true"></i>Courses
+                    <div *ngFor="let course of courses">
+                        <h4 class="c-heading-4">{{course.name}}</h4>
+                        <p class="c-subheading-6">{{course.description}}</p>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#" class="c-call-to-action c-glyph f-lightweight">
+                        <span>Continue</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <div *ngIf="features && features.length > 0" [ngClass]="{
+            'col-lg-6': courses && courses.length > 0,
+            'col-lg-12': !courses || courses.length < 1
+          }">
+            <section class="box-border x-p-a-4x" id="features-block">
+                <div>
+                    <i class="fa fa-star icon-size x-m-r-2x" aria-hidden="true"></i>Features
+                    <div *ngFor="let feature of features">
+                        <h4 class="c-heading-4">{{feature.featureName}}</h4>
+                        <p class="c-subheading-6">{{feature.description}}</p>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#" class="c-call-to-action c-glyph f-lightweight">
+                        <span>Continue</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
