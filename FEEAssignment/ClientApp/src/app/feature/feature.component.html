@@ -1,148 +1,226 @@
-<div class="c-table" data-f-loc-ascending="Sorted by {0} - ascending" data-f-loc-descending="Sorted by {0} - descending">
+<div class="header">
+    <h2><b>Features</b></h2>
+</div>
+<div class="c-table" data-f-loc-ascending="Sorted by {0} - ascending"
+    data-f-loc-descending="Sorted by {0} - descending">
     <table data-f-sort="true">
-        <caption>Features</caption>
         <thead>
             <tr>
-                <th id="subcategoryItem" scope="col" class="f-sortable" colspan="1" rowspan="2" aria-sort="none">
-                    <button aria-label="Sort by Item">Item</button>
+                <th id="featureName" scope="col" class="headertext" class= "f-sortable" colspan="1" aria-sort="ascending">
+                    <button>Feature Name</button>
                 </th>
-                <th id="subcategoryDimensions" scope="colgroup" colspan="3" rowspan="1">Dimensions</th>
-                <th scope="colgroup"></th>
-                <th id="subcategoryConnectivity" scope="colgroup" colspan="3" rowspan="1">Connectivity</th>
-                <th id="subcategoryPrice" scope="col" class="f-sortable f-numerical" colspan="1" rowspan="2" aria-sort="none">
-                    <button aria-label="Sort by Price">Price</button>
+                <th id="description" scope="col" class="headertext" colspan="1" aria-sort="none">
+                    <button>Description</button>
                 </th>
-            </tr>
-            <tr>
-                <th id="subcategoryLength" scope="col" class="f-sortable f-numerical" colspan="1" aria-sort="none">
-                    <button aria-label="Sort by Length">Length</button>
+                <th id="createdBy" scope="col" class="headertext" class= "f-sortable" colspan="1" aria-sort="ascending">
+                    <button>Created By</button>
                 </th>
-                <th id="subcategoryWidth" scope="col" class="f-sortable f-numerical" colspan="1" aria-sort="none">
-                    <button aria-label="Sort by Width">Width</button>
+                <th id="createddate" scope="colgroup" class="headertext" class= "f-sortable" aria-sort="ascending">
+                    <button>Created Date</button>
                 </th>
-                <th id="subcategoryHeight" scope="col" class="f-sortable f-numerical" colspan="1" aria-sort="none">
-                    <button aria-label="Sort by Height">Height</button>
+                <th id="lastupdatedby" scope="col" class="headertext" class= "f-sortable" colspan="1" aria-sort="ascending">
+                    <button>Last Updated By</button>
                 </th>
-                <th scope="colgroup"></th>
-                <th id="subcategoryWifi" scope="colgroup" class="f-sortable" aria-sort="none">
-                    <button aria-label="Sort by Wi-Fi">Wi-Fi</button>
+                <th id="lastupdateddate" scope="colgroup" class="headertext" class= "f-sortable" aria-sort="ascending">
+                    <button>Last Updated Date</button>
                 </th>
-                <th id="subcategory3gLTE" scope="col" class="f-sortable" colspan="1" aria-sort="none">
-                    <button aria-label="Sort by 3G/LTE">3G/LTE</button>
-                </th>
-                <th id="subcategoryBluetooth" scope="colgroup" class="f-sortable" aria-sort="none">
-                    <button aria-label="Sort by Bluetooth">Bluetooth</button>
+                <th id="toggle" scope="colgroup" class="headertext" aria-sort="ascending">
+                    <button>Toggle</button>
                 </th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td headers="subcategoryItem">Zeta</td>
-                <td class="f-numerical f-sub-categorical" headers="subcategoryDimensions subcategoryLength">10cm</td>
-                <td class="f-numerical f-sub-categorical" headers="subcategoryDimensions subcategoryWidth">1cm</td>
-                <td class="f-numerical f-sub-categorical" headers="subcategoryDimensions subcategoryHeight">35cm</td>
-                <td></td>
-                <td class="f-sub-categorical" headers="subcategoryConnectivity subcategoryWifi">Yes</td>
-                <td class="f-sub-categorical" headers="subcategoryConnectivity subcategory3gLTE">3G</td>
-                <td class="f-sub-categorical" headers="subcategoryConnectivity subcategoryBluetooth">Yes</td>
-                <td class="f-numerical" headers="subcategoryPrice">
-                    <div class="c-price" itemprop="offers" itemscope="" itemtype="https://schema.org/Offer">
-                        <meta itemprop="priceCurrency" content="USD">
-                        <span>$</span>
-                        <span itemprop="price">500</span>
-                        <link itemprop="availability" href="https://schema.org/InStock">
-                    </div>
-                </td>
+                <td headers="featureName">Feature Name</td>
+                <td>Description</td>
+                <td>Creator</td>
+                <td>01/01/2020</td>
+                <td>Updater</td>
+                <td>01/01/2020</td>
+                <label class="switch">
+                    <input type="checkbox" style="color:Tomato;" >
+                    <span class="slider round"></span>
+                  </label>
             </tr>
             <tr>
-                <td headers="subcategoryItem">Bravo</td>
-                <td class="f-numerical f-sub-categorical" headers="subcategoryDimensions subcategoryLength">29cm</td>
-                <td class="f-numerical f-sub-categorical" headers="subcategoryDimensions subcategoryWidth">3cm</td>
-                <td class="f-numerical f-sub-categorical" headers="subcategoryDimensions subcategoryHeight">40cm</td>
-                <td></td>
-                <td class="f-sub-categorical" headers="subcategoryConnectivity subcategoryWifi">No</td>
-                <td class="f-sub-categorical" headers="subcategoryConnectivity subcategory3gLTE">LTE</td>
-                <td class="f-sub-categorical" headers="subcategoryConnectivity subcategoryBluetooth">Yes</td>
-                <td class="f-numerical" headers="subcategoryPrice">
-                    <div class="c-price" itemprop="offers" itemscope="" itemtype="https://schema.org/Offer">
-                        <meta itemprop="priceCurrency" content="USD">
-                        <span>$</span>
-                        <span itemprop="price">1,000</span>
-                        <link itemprop="availability" href="https://schema.org/InStock">
-                    </div>
-                </td>
+                <td headers="featureName">Feature Name</td>
+                <td>Description</td>
+                <td>Creator</td>
+                <td>01/01/2020</td>
+                <td>Updater</td>
+                <td>01/01/2020</td>
+                <label class="switch">
+                    <input type="checkbox" style="color:Tomato;" >
+                    <span class="slider round"></span>
+                  </label>
             </tr>
             <tr>
-                <td headers="subcategoryItem">Charlie</td>
-                <td class="f-numerical f-sub-categorical" headers="subcategoryDimensions subcategoryLength">40cm</td>
-                <td class="f-numerical f-sub-categorical" headers="subcategoryDimensions subcategoryWidth">5cm</td>
-                <td class="f-numerical f-sub-categorical" headers="subcategoryDimensions subcategoryHeight">80cm</td>
-                <td></td>
-                <td class="f-sub-categorical" headers="subcategoryConnectivity subcategoryWifi">Yes</td>
-                <td class="f-sub-categorical" headers="subcategoryConnectivity subcategory3gLTE">3G</td>
-                <td class="f-sub-categorical" headers="subcategoryConnectivity subcategoryBluetooth">Yes</td>
-                <td class="f-numerical" headers="subcategoryPrice">
-                    <div class="c-price" itemprop="offers" itemscope="" itemtype="https://schema.org/Offer">
-                        <meta itemprop="priceCurrency" content="USD">
-                        <span>$</span>
-                        <span itemprop="price">999</span>
-                        <link itemprop="availability" href="https://schema.org/InStock">
-                    </div>
-                </td>
+                <td headers="featureName">Feature Name</td>
+                <td>Description</td>
+                <td>Creator</td>
+                <td>01/01/2020</td>
+                <td>Updater</td>
+                <td>01/01/2020</td>
+                <label class="switch">
+                    <input type="checkbox" style="color:Tomato;" >
+                    <span class="slider round"></span>
+                  </label>
             </tr>
             <tr>
-                <td headers="subcategoryItem">Delta</td>
-                <td class="f-numerical f-sub-categorical" headers="subcategoryDimensions subcategoryLength">35cm</td>
-                <td class="f-numerical f-sub-categorical" headers="subcategoryDimensions subcategoryWidth">6cm</td>
-                <td class="f-numerical f-sub-categorical" headers="subcategoryDimensions subcategoryHeight">50cm</td>
-                <td></td>
-                <td class="f-sub-categorical" headers="subcategoryConnectivity subcategoryWifi">No</td>
-                <td class="f-sub-categorical" headers="subcategoryConnectivity subcategory3gLTE">LTE</td>
-                <td class="f-sub-categorical" headers="subcategoryConnectivity subcategoryBluetooth">No</td>
-                <td class="f-numerical" headers="subcategoryPrice">
-                    <div class="c-price" itemprop="offers" itemscope="" itemtype="https://schema.org/Offer">
-                        <meta itemprop="priceCurrency" content="USD">
-                        <span>$</span>
-                        <span itemprop="price">2,000</span>
-                        <link itemprop="availability" href="https://schema.org/InStock">
-                    </div>
-                </td>
+                <td headers="featureName">Feature Name</td>
+                <td>Description</td>
+                <td>Creator</td>
+                <td>01/01/2020</td>
+                <td>Updater</td>
+                <td>01/01/2020</td>
+                <label class="switch">
+                    <input type="checkbox" style="color:Tomato;" >
+                    <span class="slider round"></span>
+                  </label>
             </tr>
             <tr>
-                <td headers="subcategoryItem">Echo</td>
-                <td class="f-numerical f-sub-categorical" headers="subcategoryDimensions subcategoryLength">30cm</td>
-                <td class="f-numerical f-sub-categorical" headers="subcategoryDimensions subcategoryWidth">2cm</td>
-                <td class="f-numerical f-sub-categorical" headers="subcategoryDimensions subcategoryHeight">30cm</td>
-                <td></td>
-                <td class="f-sub-categorical" headers="subcategoryConnectivity subcategoryWifi">Yes</td>
-                <td class="f-sub-categorical" headers="subcategoryConnectivity subcategory3gLTE">3G</td>
-                <td class="f-sub-categorical" headers="subcategoryConnectivity subcategoryBluetooth">Yes</td>
-                <td class="f-numerical" headers="subcategoryPrice">
-                    <div class="c-price" itemprop="offers" itemscope="" itemtype="https://schema.org/Offer">
-                        <meta itemprop="priceCurrency" content="USD">
-                        <span>$</span>
-                        <span itemprop="price">1,000</span>
-                        <link itemprop="availability" href="https://schema.org/InStock">
-                    </div>
-                </td>
+                <td headers="featureName">Feature Name</td>
+                <td>Description</td>
+                <td>Creator</td>
+                <td>01/01/2020</td>
+                <td>Updater</td>
+                <td>01/01/2020</td>
+                <label class="switch">
+                    <input type="checkbox" style="color:Tomato;" >
+                    <span class="slider round"></span>
+                  </label>
             </tr>
             <tr>
-                <td headers="subcategoryItem">Foxtrot</td>
-                <td class="f-numerical f-sub-categorical" headers="subcategoryDimensions subcategoryLength">10cm</td>
-                <td class="f-numerical f-sub-categorical" headers="subcategoryDimensions subcategoryWidth">2.5cm</td>
-                <td class="f-numerical f-sub-categorical" headers="subcategoryDimensions subcategoryHeight">33cm</td>
-                <td></td>
-                <td class="f-sub-categorical" headers="subcategoryConnectivity subcategoryWifi">Yes</td>
-                <td class="f-sub-categorical" headers="subcategoryConnectivity subcategory3gLTE">3G</td>
-                <td class="f-sub-categorical" headers="subcategoryConnectivity subcategoryBluetooth">No</td>
-                <td class="f-numerical" headers="subcategoryPrice">
-                    <div class="c-price" itemprop="offers" itemscope="" itemtype="https://schema.org/Offer">
-                        <meta itemprop="priceCurrency" content="USD">
-                        <span>$</span>
-                        <span itemprop="price">899</span>
-                        <link itemprop="availability" href="https://schema.org/InStock">
-                    </div>
-                </td>
+                <td headers="featureName">Feature Name</td>
+                <td>Description</td>
+                <td>Creator</td>
+                <td>01/01/2020</td>
+                <td>Updater</td>
+                <td>01/01/2020</td>
+                <label class="switch">
+                    <input type="checkbox" style="color:Tomato;" >
+                    <span class="slider round"></span>
+                  </label>
+            </tr>
+            <tr>
+                <td headers="featureName">Feature Name</td>
+                <td>Description</td>
+                <td>Creator</td>
+                <td>01/01/2020</td>
+                <td>Updater</td>
+                <td>01/01/2020</td>
+                <label class="switch">
+                    <input type="checkbox" style="color:Tomato;" >
+                    <span class="slider round"></span>
+                  </label>
+            </tr>
+            <tr>
+                <td headers="featureName">Feature Name</td>
+                <td>Description</td>
+                <td>Creator</td>
+                <td>01/01/2020</td>
+                <td>Updater</td>
+                <td>01/01/2020</td>
+                <label class="switch">
+                    <input type="checkbox" style="color:Tomato;" >
+                    <span class="slider round"></span>
+                  </label>
+            </tr>
+            <tr>
+                <td headers="featureName">Feature Name</td>
+                <td>Description</td>
+                <td>Creator</td>
+                <td>01/01/2020</td>
+                <td>Updater</td>
+                <td>01/01/2020</td>
+                <label class="switch">
+                    <input type="checkbox" style="color:Tomato;" >
+                    <span class="slider round"></span>
+                  </label>
+            </tr>
+            <tr>
+                <td headers="featureName">Feature Name</td>
+                <td>Description</td>
+                <td>Creator</td>
+                <td>01/01/2020</td>
+                <td>Updater</td>
+                <td>01/01/2020</td>
+                <label class="switch">
+                    <input type="checkbox" style="color:Tomato;" >
+                    <span class="slider round"></span>
+                  </label>
+            </tr>
+            <tr>
+                <td headers="featureName">Feature Name</td>
+                <td>Description</td>
+                <td>Creator</td>
+                <td>01/01/2020</td>
+                <td>Updater</td>
+                <td>01/01/2020</td>
+                <label class="switch">
+                    <input type="checkbox" style="color:Tomato;" >
+                    <span class="slider round"></span>
+                  </label>
+            </tr>
+            <tr>
+                <td headers="featureName">Feature Name</td>
+                <td>Description</td>
+                <td>Creator</td>
+                <td>01/01/2020</td>
+                <td>Updater</td>
+                <td>01/01/2020</td>
+                <label class="switch">
+                    <input type="checkbox" style="color:Tomato;" >
+                    <span class="slider round"></span>
+                  </label>
+            </tr>
+            <tr>
+                <td headers="featureName">Feature Name</td>
+                <td>Description</td>
+                <td>Creator</td>
+                <td>01/01/2020</td>
+                <td>Updater</td>
+                <td>01/01/2020</td>
+                <label class="switch">
+                    <input type="checkbox" style="color:Tomato;" >
+                    <span class="slider round"></span>
+                  </label>
+            </tr>
+            <tr>
+                <td headers="featureName">Feature Name</td>
+                <td>Description</td>
+                <td>Creator</td>
+                <td>01/01/2020</td>
+                <td>Updater</td>
+                <td>01/01/2020</td>
+                <label class="switch">
+                    <input type="checkbox" style="color:Tomato;" >
+                    <span class="slider round"></span>
+                  </label>
+            </tr>
+            <tr>
+                <td headers="featureName">Feature Name</td>
+                <td>Description</td>
+                <td>Creator</td>
+                <td>01/01/2020</td>
+                <td>Updater</td>
+                <td>01/01/2020</td>
+                <label class="switch">
+                    <input type="checkbox" style="color:Tomato;" >
+                    <span class="slider round"></span>
+                  </label>
+            </tr>
+            <tr>
+                <td headers="featureName">Feature Name</td>
+                <td>Description</td>
+                <td>Creator</td>
+                <td>01/01/2020</td>
+                <td>Updater</td>
+                <td>01/01/2020</td>
+                <label class="switch">
+                    <input type="checkbox" style="color:Tomato;" >
+                    <span class="slider round"></span>
+                  </label>
             </tr>
         </tbody>
     </table>
