@@ -12,7 +12,11 @@ import { AuthorizeInterceptor } from 'src/api-authorization/authorize.intercepto
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
+<<<<<<< HEAD
 import { FeatureComponent } from './feature/feature.component';
+=======
+import { LoginComponent as asd} from '../api-authorization/login/login.component';
+>>>>>>> 43f17a7c8837195fc4fb6f1aaad4befcf8dec0a0
 
 @NgModule({
   declarations: [
@@ -29,8 +33,9 @@ import { FeatureComponent } from './feature/feature.component';
     FormsModule,
     ApiAuthorizationModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: '', component: HomeComponent, pathMatch: 'full', canActivate: [AuthorizeGuard] },
       { path: 'login', component: LoginComponent, pathMatch: 'full' },
+      { path: 'asd/:loginaction', component: asd},      
     ])
   ],
   providers: [

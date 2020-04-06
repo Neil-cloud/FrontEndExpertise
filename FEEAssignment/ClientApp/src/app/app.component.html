@@ -2,10 +2,15 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-  <app-header></app-header>
-  <div class="container">
+  <app-header *ngIf="userLoggedIn"></app-header>
+  <main id="mainContent" data-grid="container" class="full-height">
     <router-outlet></router-outlet>
+<<<<<<< HEAD
   </div>
   <app-footer></app-footer>
   <app-feature></app-feature>
+=======
+  </main>
+  <app-footer *ngIf="userLoggedIn"></app-footer>
+>>>>>>> 43f17a7c8837195fc4fb6f1aaad4befcf8dec0a0
 </body>

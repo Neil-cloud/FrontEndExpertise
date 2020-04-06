@@ -69,7 +69,7 @@ export class AuthorizeService {
   //    Pop-Up blocker or the user has disabled PopUps.
   // 3) If the two methods above fail, we redirect the browser to the IdP to perform a traditional
   //    redirect flow.
-  public async signIn(state: any): Promise<IAuthenticationResult> {
+  public async signIn(state: any): Promise<IAuthenticationResult> {    
     await this.ensureUserManagerInitialized();
     let user: User = null;
     try {
