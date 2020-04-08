@@ -12,11 +12,8 @@ import { AuthorizeInterceptor } from 'src/api-authorization/authorize.intercepto
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
-<<<<<<< HEAD
 import { FeatureComponent } from './feature/feature.component';
-=======
 import { LoginComponent as asd} from '../api-authorization/login/login.component';
->>>>>>> 43f17a7c8837195fc4fb6f1aaad4befcf8dec0a0
 
 @NgModule({
   declarations: [
