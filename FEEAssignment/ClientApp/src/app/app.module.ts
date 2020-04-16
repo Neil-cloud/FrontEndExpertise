@@ -31,7 +31,7 @@ import { LoginComponent as asd} from '../api-authorization/login/login.component
     ApiAuthorizationModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, canActivate: [AuthorizeGuard] },
-      { path: '', component: FeatureComponent, canActivate: [AuthorizeGuard] },
+      { path: 'features', component: FeatureComponent, canActivate: [AuthorizeGuard] },
     ])
   ],
   providers: [
