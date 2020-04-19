@@ -31,7 +31,7 @@ namespace FEEAssignment.Controllers
                 }
                 else
                 {
-                    return StatusCode(StatusCodes.Status403Forbidden);
+                    return Ok(false);
                 }
             }
             catch (Exception e)
