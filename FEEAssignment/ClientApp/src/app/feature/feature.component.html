@@ -1,0 +1,51 @@
+<div class="header">
+    <h2><b>Features</b></h2>
+</div>
+<div class="c-table" data-f-loc-ascending="Sorted by {0} - ascending"
+    data-f-loc-descending="Sorted by {0} - descending">
+    <table data-f-sort="true">
+        <thead>
+            <tr>
+                <th id="featureName" class="fas fa-caret-up" scope="col" class="headertext" class= "f-sortable" colspan="1" aria-sort="ascending">
+                    <button>Feature Name</button>
+                </th>
+                <th id="description" scope="col" class="headertext" colspan="1" aria-sort="none">
+                    <button>Description</button>
+                </th>
+                <th id="createdBy" class="fas fa-caret-up" class="f-sortable f-numerical" scope="col" class="headertext" class= "f-sortable" colspan="1" aria-sort="ascending">
+                    <button>Created By</button>
+                </th>
+                <th id="createddate" class="fas fa-caret-up" class="f-sortable f-numerical"scope="colgroup" class="headertext" class= "f-sortable" aria-sort="ascending">
+                    <button>Created Date</button>
+                </th>
+                <th id="lastupdatedby" class="fas fa-caret-up" class="f-sortable f-numerical" scope="col" class="headertext" class= "f-sortable" colspan="1" aria-sort="ascending">
+                    <button>Last Updated By</button>
+                </th>
+                <th id="lastupdateddate" class="fas fa-caret-up" class="f-sortable f-numerical" scope="colgroup" class="headertext" class= "f-sortable" aria-sort="ascending">
+                    <button>Last Updated Date</button>
+                </th>
+                <th id="toggle" scope="colgroup" class="headertext" aria-sort="ascending">
+                    <button>Toggle</button>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let feature of features">
+                <td headers="featureName">{{feature.featureName}}</td>
+                <td>{{feature.description}}</td>
+                <td>{{feature.createdBy}}</td>
+                <td>{{feature.createdDate}}</td>
+                <td>{{feature.lastUpdatedBy}}</td>
+                <td>{{feature.lastUpdatedDate}}</td>
+                <div class="c-toggle" *ngIf="canModify">
+                    <button id="example-1" name="example-1" role="checkbox" aria-checked="true" aria-labelledby="c-label-1 c-state-label-1"></button>
+                    <span data-on-string="On" data-off-string="Off" id="c-state-label-1">On</span>
+                </div>
+                <div class="c-toggle f-disabled" *ngIf="!canModify">
+                    <button id="example-4" name="example-4" role="checkbox" aria-checked="true" aria-labelledby="c-label-4 c-state-label-4" disabled="disabled"></button>
+                    <span data-on-string="On" data-off-string="Off" id="c-state-label-4">On</span>
+                </div>                                                                                                                                                                                                             
+            </tr>
+        </tbody>
+    </table>
+</div>
